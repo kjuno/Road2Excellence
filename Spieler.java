@@ -10,14 +10,19 @@ public class Spieler {
 
         do {
             Scanner sc = new Scanner(System.in);
-            if(!sc.hasNextInt())
+            
+            if(!sc.hasNextInt()){
                 System.out.println("Bitte geben sie eine ganze Zahl zwischen 0 und 9 ein.");
-
+                continue;
+            }
+            
             zahl = sc.nextInt();
 
-            if (zahl > 9 || zahl < 0)
+            if (zahl > 9 || zahl < 0){
                 System.out.println("Ungültige Zahl! versuche es erneut.");
-
+                continue;
+            }
+            
             eingegeben = true;
         } while(!eingegeben);
     }

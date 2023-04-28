@@ -18,9 +18,7 @@ public class Ratespiel {
         for (int i = 0; i < anzahlSpieler; i++)
             spieler[i] = new Spieler();
 
-        char weiterspielen;
-
-        boolean beendet = false;
+        boolean beendet;
 
         do {
             beendet = loop();
